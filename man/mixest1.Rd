@@ -4,7 +4,7 @@
 \title{Computes Mixture Estimation with State-Space Components.}
 
 \description{
-This function estimates recursively mixtures with state-space components with a dynamic model of switching. The components are normal linear models. Suppose there are avialable \eqn{k} potentially important predictors of \code{y}, i.e., \eqn{x_1, \dots, x_k}. Then up to \eqn{2^{k}} linear models including constant term can be created by inclding or not including each of these predictors in the individual model, i.e., component of the mixture.
+This function estimates recursively mixtures with state-space components with a dynamic model of switching. The components are normal linear models. Suppose there are available \eqn{k} potentially important predictors of \code{y}, i.e., \eqn{x_1, \dots, x_k}. Then up to \eqn{2^{k}} linear models including constant term can be created by inclding or not including each of these predictors in the individual model, i.e., component of the mixture.
 }
 
 \usage{

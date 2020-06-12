@@ -17,9 +17,7 @@ The function prints the general structure of the model, i.e., names of predictor
 }
 
 \examples{
-\dontrun{
 data(oil)
 t1<- tvp.reg(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],lambda=0.99,V=100,W=100)
 print(t1)
-}
 }

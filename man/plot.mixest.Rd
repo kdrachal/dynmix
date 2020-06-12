@@ -18,11 +18,9 @@ The function plots a few outcomes from \code{mixest} object. First, the estimate
 }
 
 \examples{
-\dontrun{
 data(oil) 
 m1 <- mixest1(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],ftype=2,V=100,W=100)
 plot(m1)
-}
 }
 
 \seealso{\code{\link[dynmix]{convts}}}

@@ -18,9 +18,7 @@ The function prints the general structure of the model, i.e., names of predictor
 }
 
 \examples{
-\dontrun{
 data(oil) 
 m1 <- mixest1(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],ftype=2,V=100,W=100)
 print(m1)
-}
 }

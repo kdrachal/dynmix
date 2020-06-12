@@ -9,11 +9,11 @@ Imports: graphics,
          utils,
          zoo
 LinkingTo: Rcpp, RcppArmadillo
-Date: 2020-06-08
+Date: 2020-06-12
 Authors@R: person("Krzysztof", "Drachal", role = c("aut","cre"), email="kdrachal@wne.uw.edu.pl", comment = "Faculty of Economic Sciences, University of Warsaw, Poland")
 Author: Krzysztof Drachal [aut, cre] (Faculty of Economic Sciences, University of Warsaw, Poland)
 Maintainer: Krzysztof Drachal <kdrachal@wne.uw.edu.pl>
-Description: Allows to perform the dynamic mixture estimation with state-space components and normal regression components, and clustering with normal mixture. Quasi-Bayesian estimation is mostly implemented. Main references: Nagy, I., Suzdaleva, E. (2013) <doi:10.1016/j.apm.2013.05.038>; Nagy, I., Suzdaleva, E., Karny, M., Mlynarova, T. (2011) <doi:10.1002/acs.1239>.
+Description: Allows to perform the dynamic mixture estimation with state-space components and normal regression components, and clustering with normal mixture. Quasi-Bayesian estimation, as well as, that based on the Kerridge inaccuracy approximation are implemented. Main references: Nagy and Suzdaleva (2013) <doi:10.1016/j.apm.2013.05.038>; Nagy et al. (2011) <doi:10.1002/acs.1239>.
 License: GPL-3
 LazyData: TRUE 
 URL: https://CRAN.R-project.org/package=dynmix 

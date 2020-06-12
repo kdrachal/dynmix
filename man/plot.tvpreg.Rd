@@ -17,11 +17,9 @@ The function plots the estimated regression coefficients, separately for each va
 }
 
 \examples{
-\dontrun{
 data(oil)
 t1<- tvp.reg(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],lambda=0.99,V=100,W=100)
 plot(t1)
-}
 }
 
 \seealso{\code{\link[dynmix]{convts}}}
