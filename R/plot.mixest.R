@@ -2,6 +2,9 @@
 
 plot.mixest <- function(x, ...)
   {
+    opar <- par(no.readonly=TRUE)
+    on.exit(par(opar))                   
+    
     inc <- vector()
     inc[1] <- 1
     for (j in 1:7)

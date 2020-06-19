@@ -35,6 +35,7 @@ mixest1(y,x,mods=NULL,ftype=NULL,lambda=NULL,kappa=NULL,V=NULL,W=NULL,atype=NULL
 }
 
 \examples{
+\donttest{
 data(oil)
 m1 <- mixest1(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],ftype=1,V=100,W=100)
 
@@ -42,6 +43,7 @@ m1 <- mixest1(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],ftype=1,V=100,W=100)
 mods <- diag(1,nrow=ncol(oil[,-1,drop=FALSE]),ncol=ncol(oil[,-1,drop=FALSE]))
 mods <- cbind(1,mods)
 m2 <- mixest1(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],mods=mods,ftype=1,V=100,W=100)
+}
 }
 
 \source{

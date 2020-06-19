@@ -34,8 +34,10 @@ mixest2(y,x,mods=NULL,ftype=NULL,V=NULL,W=NULL,atype=NULL,Tvar=NULL)
 }
 
 \examples{
+\donttest{
 data(oil)
 m1 <- mixest2(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],ftype=1,V=100,W=100)
+}
 }
 
 \source{

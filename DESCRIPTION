@@ -9,7 +9,7 @@ Imports: graphics,
          utils,
          zoo
 LinkingTo: Rcpp, RcppArmadillo
-Date: 2020-06-12
+Date: 2020-06-19
 Authors@R: person("Krzysztof", "Drachal", role = c("aut","cre"), email="kdrachal@wne.uw.edu.pl", comment = "Faculty of Economic Sciences, University of Warsaw, Poland")
 Author: Krzysztof Drachal [aut, cre] (Faculty of Economic Sciences, University of Warsaw, Poland)
 Maintainer: Krzysztof Drachal <kdrachal@wne.uw.edu.pl>

@@ -21,7 +21,7 @@ convts(x,ind=NULL, ...)
 }
 
 \examples{
-\dontrun{
+\donttest{
 data(oil)
 t1 <- tvp.reg(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],lambda=0.99,V=100,W=100)
 plot(t1)
