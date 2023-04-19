@@ -1,0 +1,2 @@
+GPL-3
+https://cran.rstudio.com/web/licenses/GPL-3
