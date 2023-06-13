@@ -153,6 +153,19 @@ mixest1 <- function(y,x,mods=NULL,ftype=NULL,lambda=NULL,kappa=NULL,V=NULL,W=NUL
           }
       }
 
+    data.last <- list()
+    data.last[[1]] <- theta.out[t+1,,drop=FALSE]
+    data.last[[2]] <- as.numeric(V.out[t+1,])
+    data.last[[3]] <- R.out[t+1,]
+    data.last[[4]] <- Vs
+    data.last[[5]] <- w[t+1,]
+    data.last[[6]] <- a
+    data.last[[7]] <- v
+    data.last[[8]] <- theta.av[t+1,,drop=FALSE]
+    data.last[[9]] <- R[[1]]
+    data.last[[10]] <- R[[t+1]]
+    names(data.last) <- c("coef","V","R","Vs","w","a","v","coef.av","R1","R.last")
+
     for (i in 1:nc)
       {
         thetas[[i]] <- thetas[[i]][-nrow(thetas[[i]]),,drop=FALSE]
@@ -212,8 +225,8 @@ mixest1 <- function(y,x,mods=NULL,ftype=NULL,lambda=NULL,kappa=NULL,V=NULL,W=NUL
     params <- c("state-space components",ftype,lambda,kappa,V,W,atype)
     names(params) <- c("mixture type","forecasting method","lambda","kappa","V0","W0","approximation method")
     colnames(mods) <- colnames(x)
-    out <- list(y.hat,pip,theta.out,w,V.out,R.out,mods,params)
-    names(out) <- c("y.hat","rvi","coef","weights","V","R","components","parameters")
+    out <- list(y.hat,pip,theta.out,w,V.out,R.out,mods,params,data.last)
+    names(out) <- c("y.hat","rvi","coef","weights","V","R","components","parameters","data.last")
     class(out) <- "mixest"
     
     return(out)

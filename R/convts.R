@@ -14,10 +14,10 @@ convts <- function(x,ind=NULL,...)
         rownames(x[[i]]) <- ind
       }
     
-    if (class(x)=="tvpreg") { names(x[[4]]) <- ind }
-    if (class(x)=="mixest") { rownames(x[[4]]) <- ind }
+    if (inherits(x,"tvpreg")) { names(x[[4]]) <- ind }
+    if (inherits(x,"mixest")) { rownames(x[[4]]) <- ind }
     
-    if (class(x)=="mixest")
+    if (inherits(x,"mixest"))
       {
         if (!any(is.na(x[[5]]))) { names(x[[5]]) <- ind }
         if (!any(is.na(x[[6]]))) { rownames(x[[6]]) <- ind }

@@ -56,6 +56,8 @@ Karny, M. (ed.), 2006, \emph{Optimized Bayesian Dynamic Advising}, Springer.
 Nagy, I., 2015, \emph{Mixture Models and Their Applications}, Czech Technical University in Prague. 
 
 Nagy, I., Suzdaleva, E., 2017, \emph{Algorithms and Programs of Dynamic Mixture Estimation}, Springer. 
+
+Quarteroni, A., Sacco, R., Saleri, F., 2007, \emph{Numerical Mathematics}, Springer.
 }
 
 \seealso{\code{\link[dynmix]{mixest1}}}

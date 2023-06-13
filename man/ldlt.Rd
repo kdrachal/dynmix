@@ -30,5 +30,5 @@ A
 }
 
 \references{
-Zhuang, X., 2020, Numerical analysis. \url{https://sites.ualberta.ca/~xzhuang/Math381/Lab5.pdf}
+Zhuang, X., 2020, \emph{Lecture Notes in Numerical Analysis (MATH 381)}, University of Alberta. 
 }

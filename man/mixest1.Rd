@@ -32,6 +32,7 @@ mixest1(y,x,mods=NULL,ftype=NULL,lambda=NULL,kappa=NULL,V=NULL,W=NULL,atype=NULL
 \item{$R}{{\code{\link[base]{matrix}}} of updated diagonal of covariances corresponding to independent variables in regressions, consistent with \code{ftype} chosen}
 \item{$components}{{\code{\link[base]{matrix}}} of \code{mods}}
 \item{$parameters}{{\code{\link[base]{character}}} of parameters used in the model}
+\item{$data.last}{{\code{\link[base]{list}}} of selected parameters obtained in the last iteration, necessary for the internal use by \code{\link[dynmix]{cauimp}}}
 }
 
 \examples{
@@ -60,6 +61,8 @@ Karny, M. (ed.), 2006, \emph{Optimized Bayesian Dynamic Advising}, Springer.
 Koop, G., Korobilis, D., 2012, Forecasting inflation using Dynamic Model Averaging. \emph{International Economic Review} \bold{53}, 867--886.
 
 Nagy, I., Suzdaleva, E., 2017, \emph{Algorithms and Programs of Dynamic Mixture Estimation}, Springer. 
+
+Quarteroni, A., Sacco, R., Saleri, F., 2007, \emph{Numerical Mathematics}, Springer.
 
 Raftery, A. E., Karny, M., Ettler, P., 2010, Online prediction under model uncertainty via Dynamic Model Averaging: Application to a cold rolling mill. \emph{Technometrics} \bold{52}, 52--66.
 }
