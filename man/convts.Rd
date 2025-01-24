@@ -26,13 +26,13 @@ data(oil)
 t1 <- tvp.reg(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],lambda=0.99,V=100,W=100)
 plot(t1)
 
-t1a <- convts(x=t1,from=as.Date("1990-02-15"),by="month",length.out=nrow(oil[,1,drop=FALSE]))
+t1a <- convts(x=t1,from=as.Date("1998-02-01"),by="month",length.out=nrow(oil[,1,drop=FALSE]))
 plot(t1a)
 
 m1 <- mixest1(y=oil[,1,drop=FALSE],x=oil[,-1,drop=FALSE],ftype=1,V=100,W=100)
 plot(m1)
 
-ind <- as.character(seq(from=as.Date("1990-02-15"),by="month",length.out=nrow(oil[,1,drop=FALSE])))
+ind <- as.character(seq(from=as.Date("1998-02-01"),by="month",length.out=nrow(oil[,1,drop=FALSE])))
 m1a <- convts(x=m1,ind=ind)
 plot(m1a)
 }

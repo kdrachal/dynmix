@@ -33,8 +33,8 @@ cauimp(object,x.post,y.post,alpha=0.05,n.sim=100)
 \donttest{
 data(oil)
 m1 <- mixest1(y=oil[1:300,1,drop=FALSE],x=oil[1:300,-1,drop=FALSE],ftype=0,V=1,W=1,kappa=0.97)
-x.1 <- oil[301:323,-1,drop=FALSE]
-y.1 <- oil[301:323,1,drop=FALSE]
+x.1 <- oil[301:321,-1,drop=FALSE]
+y.1 <- oil[301:321,1,drop=FALSE]
 ci <- cauimp(object=m1,x.post=x.1,y.post=y.1,alpha=0.05,n.sim=100)
 }
 }
