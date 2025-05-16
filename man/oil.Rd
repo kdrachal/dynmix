@@ -20,7 +20,9 @@
 \details{The data are in monthly frequency. They cover the period between Feb, 1998 and Oct, 2024. cons, r, stocks and ex_rate are lagged one period back.
 }
 
-\source{The data are provided by Board of Governors of the Federal Reserve System, OECD, U.S. Energy Information Administration and World Bank. 
+\source{The data are provided by Bank for International Settlements, Board of Governors of the Federal Reserve System, OECD, U.S. Energy Information Administration and World Bank. 
+
+\url{https://www.bis.org}
 
 \url{https://www.eia.gov}
 
@@ -36,6 +38,8 @@ data(oil)
 }
 
 \references{
+Bank for International Settlements, 2025. Effective exchange rates, BIS WS_EER 1.0 (data set). \url{https://data.bis.org/topics/EER/BIS\%2CWS_EER\%2C1.0/M.R.B.US}
+
 Board of Governors of the Federal Reserve System, 2025. Selected interest rates. \url{https://www.federalreserve.gov/releases/h15/}
 
 OECD, 2025. Share prices. \url{https://www.oecd.org/en/data/indicators/share-prices.html}
